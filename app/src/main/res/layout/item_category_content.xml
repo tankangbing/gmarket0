@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:clickable="true"
+        android:layout_width="0dp"
+        android:id="@+id/ll_sub1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_image1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="休闲"
+            android:textColor="@color/txt_small"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/ll_sub2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_image2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="休闲"
+            android:textColor="@color/txt_small"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:clickable="true"
+         android:id="@+id/ll_sub3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_image3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="休闲"
+            android:textColor="@color/txt_small"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

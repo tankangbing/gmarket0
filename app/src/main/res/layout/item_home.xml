@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_bg_selector"
+    android:padding="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 第一行 -->
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有缘千里来相会"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+                     <!--  android:isIndicator="true" 表示RatingBar是一个指示器的效果，不能在界面改变结果-->
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:isIndicator="true"
+                    android:progressDrawable="@drawable/rating_drawable"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_app_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.7M"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableTop="@drawable/ic_download"
+              android:text="下载"
+              android:layout_alignParentRight="true"
+              android:textColor="@android:color/darker_gray"
+              android:layout_centerVertical="true"
+              android:gravity="center"
+              />
+
+        <!-- 线 -->
+    </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#222b2b2b" />
+
+        <!-- 描述 -->
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一碗牛肉面"
+            android:textColor="@android:color/darker_gray"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+    <CheckBox
+    android:text="CheckBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:visibility="gone"
+    android:textColor="@android:color/darker_gray"
+    android:id="@+id/checkBox" />
+
+
+</LinearLayout>
